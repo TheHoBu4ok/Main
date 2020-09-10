@@ -1,20 +1,37 @@
+"use strict";
+
+if (4==9) {
+    console.log('Ok!');
+} else {
+    console.log('Error');
+}
+
+// const num = 50;
+
+// if (num < 49) {
+//     console.log('Error');
+// } else if (num > 100) {
+//     console.log('Много');
+// } else {
+//     console.log('Ok!');
+// }
+
+// (num === 50) ? console.log('Ok!') : console.log('Error'); /* Тернарный аргумент - три аргумента */
 
 
-const numberOfFilms = +prompt("Сколько фильмов Вы уже посмотрели?", '');
-const lastFilm = prompt("Один из последних просмотренных фильмов?"),
-      rating = prompt("На сколько оцените его?"),
-      lastFilm2 = prompt("Один из последних просмотренных фильмов?"),
-      rating2 = prompt("На сколько оцените его?");
+const num = '50';
 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
-
-console.log(personalMovieDB);
-
-personalMovieDB.movies[lastFilm] = rating;
-personalMovieDB.movies[lastFilm2] = rating2;
+switch (num) {                                            /* Только строгое сравнение */
+    case '49':
+        console.log('Неверно');
+        break;
+    case '100':
+        console.log('Неверно');
+        break;
+    case '50':
+        console.log('Верно!');
+        break;
+    default:
+        console.log('Не в этот раз');
+        break;
+}   
