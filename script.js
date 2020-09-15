@@ -1,9 +1,45 @@
 "use strict";
 
-const category = 'toys';
+let num = 20;
 
-console.log(`https://someurl.com/${category}/5`);
+function showFirstMessage(text) {
+    console.log(text);
+    let num = 10;
+}
 
-const user = 'Ivan';
+showFirstMessage("Hello world!");
+console.log(num);
 
-alert(`Привет, ${user}`);
+// console.log(calc(4, 3));
+// console.log(calc(5, 6));
+// console.log(calc(7, 8));
+
+// function calc(a, b) {
+//     return(a + b);
+//     // console.log(a); - нечитаемый код, т.к. он находится после return
+// }
+
+// console.log(calc(4, 3));
+// console.log(calc(5, 6));
+// console.log(calc(7, 8));
+
+function ret() {
+    let num = 50;
+    return num;
+}
+
+const anotherNum = ret();
+console.log(anotherNum);
+
+let logger = function() {
+    console.log("Hello");
+};
+
+logger();
+
+// const calc = (a, b) => a + b;
+
+const calc = (a, b) => {
+    console.log('1');
+    return a + b;
+};
