@@ -1,45 +1,32 @@
 "use strict";
 
-let num = 20;
+const str = "teSt";
+const arr = [1, 2, 4];
 
-function showFirstMessage(text) {
-    console.log(text);
-    let num = 10;
-}
+// console.log(str[2]);
 
-showFirstMessage("Hello world!");
-console.log(num);
+// console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+console.log(str);
 
-// console.log(calc(4, 3));
-// console.log(calc(5, 6));
-// console.log(calc(7, 8));
+const fruit = "Some fruit";
 
-// function calc(a, b) {
-//     return(a + b);
-//     // console.log(a); - нечитаемый код, т.к. он находится после return
-// }
+console.log(fruit.indexOf("fruit"));
+// console.log(fruit.indexOf("q")); // (-1) - не существует
 
-// console.log(calc(4, 3));
-// console.log(calc(5, 6));
-// console.log(calc(7, 8));
+const logg = "Hello world";
 
-function ret() {
-    let num = 50;
-    return num;
-}
+console.log(logg.slice(6, 11));
+console.log(logg.slice(6));
+console.log(logg.slice(-5));
 
-const anotherNum = ret();
-console.log(anotherNum);
+console.log(logg.substring(6, 11));
+console.log(logg.substr(6, 5));  // второй аргумент - количесство символов для вырезания
 
-let logger = function() {
-    console.log("Hello");
-};
 
-logger();
+const num = 12.2;
+console.log(Math.round(num));
 
-// const calc = (a, b) => a + b;
-
-const calc = (a, b) => {
-    console.log('1');
-    return a + b;
-};
+const test = "12.2px";
+console.log(parseInt(test));
+console.log(parseFloat(test));
