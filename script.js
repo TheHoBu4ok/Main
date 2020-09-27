@@ -1,54 +1,33 @@
 "use strict";
 
-// To string
+// let x = 5; alert ( x++ ); // 5
 
-// 1)
-console.log(typeof(String(null)));
-console.log(typeof(String(4)));
+// [ ] + false - null + true
+// console.log([] + false - null + true); // NaN
 
-// 2)
-console.log(typeof(null + ''));
+// let y = 1;
+// let x = y = 2;
+// alert(x);  // 2
 
-const num = 5;
+// console.log([] + 1 + 2); // "12"
 
-console.log("https://vk.com/catalog/" + num);
+// alert( "1"[0] ); // 1, обращение к 1 элементу строки
 
-const fontSize = 26 + 'px';
+// console.log(2 && 1 && null && 0 && undefined);
+// && запинается на лжи
+// || запинается на правде
 
-// To number
+// console.log(!!( 1 && 2 ) === (1 & 2)); // false
+//                3 - если равны, то последнее значение  
+// alert( null || 2 && 3 || 4 );
 
-// 1)
-console.log(typeof(Number('4')));
+// let a = [1, 2, 3],
+//     b = [1, 2, 3];
 
-// 2)
-console.log(typeof(+'5'));
+// console.log(a == b);  // false
 
-// 3)
-console.log(typeof(parseInt("15px", 10)));
+// alert( +"Infinity" );  // infinity
 
-let answ = +prompt("Hello", "");
+// console.log("Ёжик" > "яблоко"); // false
 
-// To boolean
-
-// 1)
-
-// 0, '', null, undefined, NaN; - false
-// Another variants - true. [], {}, and others...
-
-let switcher = null;
-
-if (switcher) {
-    console.log("Working...");
-}
-
-switcher = 1;
-
-if (switcher) {
-    console.log("Working...");
-}
-
-// 2)
-console.log(typeof(Boolean(4)));
-
-// 3)
-console.log(typeof(!!'4444'));
+// console.log(0 || "" || 2 || undefined || true || false); // 2
