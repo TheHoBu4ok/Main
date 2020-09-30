@@ -1,33 +1,23 @@
 "use strict";
 
-// let x = 5; alert ( x++ ); // 5
+const box = document.getElementById("box");
 
-// [ ] + false - null + true
-// console.log([] + false - null + true); // NaN
+console.log(box);
 
-// let y = 1;
-// let x = y = 2;
-// alert(x);  // 2
+const btns = document.getElementsByTagName("button")[1];
 
-// console.log([] + 1 + 2); // "12"
+console.log(btns);
 
-// alert( "1"[0] ); // 1, обращение к 1 элементу строки
+const circles = document.getElementsByClassName('circle');
 
-// console.log(2 && 1 && null && 0 && undefined);
-// && запинается на лжи
-// || запинается на правде
+console.log(circles);
 
-// console.log(!!( 1 && 2 ) === (1 & 2)); // false
-//                3 - если равны, то последнее значение  
-// alert( null || 2 && 3 || 4 );
+const hearts = document.querySelectorAll('.heart');
 
-// let a = [1, 2, 3],
-//     b = [1, 2, 3];
+hearts.forEach(item => {
+    console.log(item);
+});
 
-// console.log(a == b);  // false
+const oneHeart = document.querySelector('.heart');
 
-// alert( +"Infinity" );  // infinity
-
-// console.log("Ёжик" > "яблоко"); // false
-
-// console.log(0 || "" || 2 || undefined || true || false); // 2
+console.log(oneHeart);
