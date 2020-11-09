@@ -1,35 +1,14 @@
 "use strict";
 
-// touchstart
-// touchmove
-// touchend
-// touchenter - заход в активную зону
-// touchleave - выход с активной зоны
-// touchcancel - за пределы
+const p = document.querySelectorAll('p');
+console.log(p);
 
-window.addEventListener('DOMContentLoaded', () => {
-    const box = document.querySelector('.box');
+function loadScript(src) {
+    const script = document.createElement('script');
+    script.src = src;
+    script.async = false;
+    document.body.append(script); // динамически-загружаемые скрипты ведут себя как async
+}
 
-    box.addEventListener('touchstart', (e) => {
-        e.preventDefault();
-
-        console.log('Start');
-        console.log(e.targetTouches);
-    });
-
-    box.addEventListener('touchmove', (e) => {
-        e.preventDefault();
-
-        console.log(e.targetTouches[0].pageX);
-    });
-
-    // box.addEventListener('touchend', (e) => {
-    //     e.preventDefault();
-
-    //     console.log('End');
-    // });
-});
-
-// touches
-// targetTouches
-// changedTouches
+loadScript('test.js');
+loadScript('some.js');
